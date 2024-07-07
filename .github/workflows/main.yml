@@ -1,27 +1,29 @@
+name: Deploy
+
 on:
   push:
-    branches:
-      - gh-pages
+    branches: 
+      - main
 
-name: build gatsby
+permissions:
+  contents: write
 
 jobs:
-  build_gatsby:
-    name: build
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 20.3.1
 
-      - name: yarn install
-        run: yarn install
+      - name: Install node packages
+        run: yarn
 
-      - name: gatsby build
-        env:
-          GH_API_KEY: ${{ secrets.HWINKR_BLOG}}
+      - name: Build
         run: yarn build
 
-      - name: deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.HWINKR_BLOG_TOKEN }}
-          publish_dir: ./public
+          folder: public
