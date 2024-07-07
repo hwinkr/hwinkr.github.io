@@ -1,10 +1,10 @@
 {
   "name": "gatsby-starter-hoodie",
   "private": false,
-  "description": "gatsby-starter-hoodie is a gatsby theme developed for developers to write tech blogs.",
-  "homepage": "https://devhudi.github.io/gatsby-starter-hoodie/",
+  "description": "hwinkr personal blog",
+  "homepage": "https://hwinkr.github.io/",
   "version": "0.2.0",
-  "author": "Hudi",
+  "author": "hwinkr",
   "dependencies": {
     "ajv": "8.16.0",
     "babel-eslint": "^10.1.0",
@@ -73,7 +73,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy-gh": "gatsby build && gh-pages -d public",
+    "deploy-gh": "gatsby build && gh-pages -d public -b master",
     "deploy-gh-prefix-paths": "gatsby build --prefix-paths && gh-pages -d public",
     "check:lint": "eslint . --ext .js,.jsx",
     "fix:lint": "eslint . --fix --ext .js,.jsx",
@@ -82,9 +82,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/devHudi/gatsby-starter-hoodie"
+    "url": "https://github.com/hwinkr/hwinkr.github.io"
   },
   "bugs": {
-    "url": "https://github.com/devHudi/gatsby-starter-hoodie"
+    "url": "https://github.com/hwinkr/hwinkr.github.io"
   }
 }
