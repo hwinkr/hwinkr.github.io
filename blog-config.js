@@ -1,23 +1,17 @@
 module.exports = {
-  title: "HWLog",
-  description: "Hello :) I'm Hudi who developed gatsby-starter-hoodie theme.",
-  author: "Hudi",
-  siteUrl: "https://devhudi.github.io/gatsby-starter-hoodie/",
+  title: "HW.log",
+  description:
+    "의미 없는 기록은 없다고 생각하며, 학습하고 느낀 것들을 기록합니다 :)",
+  author: "최현웅(Harry)",
+  siteUrl: "https://hwinkr.github.io/",
   links: {
-    github: "https://github.com/devHudi",
+    github: "https://github.com/hwinkr",
     linkedIn: "https://linkedin.com",
-    facebook: "https://www.facebook.com",
-    twitter: "https://twitter.com",
-    x: "https://x.com",
-    instagram: "https://www.instagram.com",
-    medium: "https://medium.com",
-    blogger: "https://blogger.com",
-    email: "mailto:devhudi@gmail.com",
-    resume: "https://hudi.blog",
-    link: "https://hudi.blog",
+    instagram: "https://www.instagram.com/hwinkr",
+    email: "mailto:hyunwoong8280@gmail.com",
   },
   utterances: {
-    repo: "devHudi/gatsby-starter-hoodie",
+    repo: "hwinkr/hwinkr.github.io",
     type: "pathname",
   },
 }
