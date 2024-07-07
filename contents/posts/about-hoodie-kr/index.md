@@ -11,10 +11,6 @@ series: "gatsby-starter-hoodie 로 블로그 시작하기"
 
 ## gatsby-starter-hoodie 에 대하여
 
-gatsby-starter-hoodie 는 기술 블로그를 작성하기 위해 개발된 Gatsby 테마입니다. 마크다운과 많은 프로그래밍 언어의 코드 하이라이팅, 그리고 Katex 문법을 지원합니다. 또한 태그와 시리즈를 통하여 쉽게 게시물을 분류할 수 있습니다.
-
-다크모드를 지원하는 깔끔한 디자인의 gatsby-starter-hoodie 로 여러분의 블로그를 시작하세요.
-
 ## 주요 기능
 
 - 마크다운
