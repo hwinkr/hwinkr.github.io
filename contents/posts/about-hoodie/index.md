@@ -11,8 +11,6 @@ series: "Getting started your blog with gatsby-starter-hoodie"
 
 ## About gatsby-starter-hoodie
 
-gatsby-starter-hoodie is a gatsby theme created for writing tech blogs. Markdown, Code Highlighting in various programming languages, and Katex syntax are supported. Also, you can easily categorize articles into tags and series.
-
 Start your blog with a neatly designed gatsby-starter-hoodie that supports dark mode.
 
 ## Features
