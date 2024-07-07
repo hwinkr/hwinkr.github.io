@@ -6,7 +6,8 @@ module.exports = {
   siteUrl: "https://hwinkr.github.io/",
   links: {
     github: "https://github.com/hwinkr",
-    linkedIn: "https://linkedin.com",
+    linkedIn:
+      "https://www.linkedin.com/in/%ED%98%84%EC%9B%85-%EC%B5%9C-80973126a/",
     instagram: "https://www.instagram.com/hwinkr",
     email: "mailto:hyunwoong8280@gmail.com",
   },

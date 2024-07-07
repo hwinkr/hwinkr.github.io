@@ -43,7 +43,6 @@ const Layout = ({ children }) => {
       <GlobalStyles />
       <Header toggleTheme={toggleTheme} />
       <Body>{children}</Body>
-      <Footer />
     </ThemeProvider>
   )
 }
