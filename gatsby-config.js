@@ -59,6 +59,7 @@ module.exports = {
       options: {
         name: `markdown-pages`,
         path: `${__dirname}/contents/posts`,
+        ignore: [`**/\.*`], // 숨김 파일 무시
       },
     },
     {
