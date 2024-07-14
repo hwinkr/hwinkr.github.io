@@ -5,14 +5,7 @@ import { Link } from "gatsby"
 
 import { title } from "../../../../blog-config"
 
-import {
-  FaSun,
-  FaMoon,
-  FaTags,
-  FaRss,
-  FaSearch,
-  FaListUl,
-} from "react-icons/fa"
+import { FaSun, FaMoon, FaTags, FaSearch, FaListUl } from "react-icons/fa"
 
 const HeaderWrapper = styled.header`
   display: block;
@@ -45,7 +38,7 @@ const Inner = styled.div`
 
 const BlogTitle = styled.span`
   letter-spacing: -1px;
-  font-family: "Source Code Pro", sans-serif;
+  font-family: "SF Mono", "Inter", sans-serif;
   font-weight: 700;
   font-size: 24px;
   color: ${props => props.theme.colors.text};
