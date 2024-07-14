@@ -11,7 +11,14 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-catch-links`,
-    `gatsby-plugin-robots-txt`,
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://hwinkr.github.io",
+        sitemap: "https://hwinkr.github.io/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
+    },
     {
       resolve: `gatsby-plugin-react-redux`,
       options: {
@@ -31,7 +38,8 @@ module.exports = {
       options: {
         fonts: [
           `noto sans kr:300,400,500,700,900`,
-          `source code pro:700`, // you can also specify font weights and styles
+          `source code pro:700`,
+          `inter:100,200,300,400,500,600,700,800,900`,
         ],
         display: "swap",
       },
@@ -59,7 +67,7 @@ module.exports = {
       options: {
         name: `markdown-pages`,
         path: `${__dirname}/contents/posts`,
-        ignore: [`**/\.*`], // 숨김 파일 무시
+        ignore: [`**/.*`], // 숨김 파일 무시
       },
     },
     {
