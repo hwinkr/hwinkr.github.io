@@ -27,6 +27,10 @@ const StyledMarkdown = styled.div`
   }
 
   & p {
+    line-height: 28px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
     overflow-x: scroll;
     word-break: break-word;
 
@@ -41,7 +45,7 @@ const StyledMarkdown = styled.div`
   & h5,
   & h6 {
     margin: 11.2px 0 4.8px 0;
-    font-weight: 700;
+    font-weight: 600;
     overflow: visible;
   }
 
