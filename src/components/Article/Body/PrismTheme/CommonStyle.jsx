@@ -1,13 +1,22 @@
 import { css } from "styled-components"
 
 const CommonStyle = css`
+  @font-face {
+    font-family: "SF Mono";
+    font-style: normal;
+    font-weight: normal;
+    src: local("SF Mono Regular"),
+      url("src/fonts/SFMonoRegular.woff") format("woff");
+  }
+
   code[class*="language-"],
   pre[class*="language-"] {
     margin-bottom: 24px;
     font-size: 13.5px;
     color: #ccc;
     background: none;
-    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    font-family: "SF Mono", Consolas, Monaco, "Andale Mono", "Ubuntu Mono",
+      monospace;
     text-align: left;
     white-space: pre;
     word-spacing: normal;
