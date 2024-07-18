@@ -182,6 +182,86 @@ const Comment = () => {
   )
 }
 
+const TestComment = () => {
+  const { theme } = useSelector(state => state.theme)
+
+  const commentTheme =
+    theme === "light" ? "light_protanopia" : "dark_tritanopia"
+
+  useEffect(() => {
+    const script = document.createElement("script")
+    script.src = "https://giscus.app/client.js"
+    script.async = true
+    script.crossOrigin = "anonymous"
+    script.setAttribute("data-repo", "hwinkr/hwinkr.github.io")
+    script.setAttribute("data-repo-id", "R_kgDOMTDlAw")
+    script.setAttribute("data-category", "General")
+    script.setAttribute("data-category-id", "DIC_kwDOMTDlA84Cg40g")
+    script.setAttribute("data-mapping", "pathname")
+    script.setAttribute("data-strict", "0")
+    script.setAttribute("data-reactions-enabled", "1")
+    script.setAttribute("data-emit-metadata", "0")
+    script.setAttribute("data-input-position", "top")
+    script.setAttribute("data-theme", commentTheme)
+    script.setAttribute("data-lang", "ko")
+    script.setAttribute("data-loading", "lazy")
+
+    const giscusContainer = document.getElementById("giscus-container")
+    giscusContainer.appendChild(script)
+
+    return () => {
+      // Cleanup function to remove the script when the component unmounts
+      giscusContainer.innerHTML = ""
+    }
+  }, [])
+
+  useEffect(() => {
+    const script = document.createElement("script")
+    script.src = "https://giscus.app/client.js"
+    script.async = true
+    script.crossOrigin = "anonymous"
+    script.setAttribute("data-repo", "hwinkr/hwinkr.github.io")
+    script.setAttribute("data-repo-id", "R_kgDOMTDlAw")
+    script.setAttribute("data-category", "General")
+    script.setAttribute("data-category-id", "DIC_kwDOMTDlA84Cg40g")
+    script.setAttribute("data-mapping", "pathname")
+    script.setAttribute("data-strict", "0")
+    script.setAttribute("data-reactions-enabled", "1")
+    script.setAttribute("data-emit-metadata", "0")
+    script.setAttribute("data-input-position", "top")
+    script.setAttribute("data-theme", commentTheme)
+    script.setAttribute("data-lang", "ko")
+    script.setAttribute("data-loading", "lazy")
+
+    const giscusContainer = document.getElementById("giscus-container")
+    giscusContainer.appendChild(script)
+
+    return () => {
+      giscusContainer.innerHTML = ""
+    }
+  }, [])
+
+  useEffect(() => {
+    const giscusContainer = document.getElementById("giscus-container")
+    const iframe = giscusContainer.querySelector("iframe.giscus-frame")
+
+    if (iframe) {
+      iframe.contentWindow.postMessage(
+        {
+          giscus: {
+            setConfig: {
+              theme: commentTheme,
+            },
+          },
+        },
+        "https://giscus.app"
+      )
+    }
+  }, [commentTheme])
+
+  return <div id="giscus-container" />
+}
+
 const Footer = ({ previous, next }) => {
   return (
     <>
@@ -202,7 +282,7 @@ const Footer = ({ previous, next }) => {
       <Bio />
       <CommentWrapper>
         <Divider mt="32px" />
-        <Comment />
+        <TestComment />
       </CommentWrapper>
     </>
   )

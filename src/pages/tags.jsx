@@ -73,7 +73,6 @@ const TagsPage = ({ data }) => {
           tagList={tags}
           selected={selected}
           onClick={tag => {
-            console.log(tag, selected)
             if (tag === selected) {
               navigate("/tags")
               alert("zz")
