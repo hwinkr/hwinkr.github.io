@@ -267,14 +267,17 @@ const Footer = ({ previous, next }) => {
     <>
       <ArticleButtonContainer>
         {previous ? (
-          <ArticleButton onClick={() => navigate(previous?.fields?.slug)}>
+          <ArticleButton onClick={() => navigate("/" + previous?.fields?.slug)}>
             {previous?.frontmatter?.title}
           </ArticleButton>
         ) : (
           <div></div>
         )}
         {next && (
-          <ArticleButton right onClick={() => navigate(next?.fields?.slug)}>
+          <ArticleButton
+            right
+            onClick={() => navigate("/" + next?.fields?.slug)}
+          >
             {next?.frontmatter?.title}
           </ArticleButton>
         )}
