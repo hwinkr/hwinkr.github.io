@@ -6,7 +6,7 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     font-family: 'Inter', 'Noto Sans KR', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     background: ${props => props.theme.colors.bodyBackground};
   }
 `

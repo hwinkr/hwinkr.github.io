@@ -12,7 +12,7 @@ const GRAY0 = "#f8f9fa"
 export const light = {
   name: "light",
   colors: {
-    bodyBackground: "#ffffff",
+    bodyBackground: "rgb(248, 251, 241)",
     text: GRAY9,
     secondaryText: GRAY7,
     tertiaryText: GRAY6,
