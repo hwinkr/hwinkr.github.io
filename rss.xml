@@ -1,4 +1,237 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of HW.log]]></title><description><![CDATA[의미 없는 기록은 없다고 생각하며, 학습하고 느낀 것들을 기록합니다 :)]]></description><link>https://hwinkr.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 10 Aug 2024 17:14:03 GMT</lastBuildDate><item><title><![CDATA[우아한테크코스 레벨 3 2차 스프린트 회고]]></title><description><![CDATA[디자인을 하자 1차 스프린트와 해커톤이 끝난 후, 본격적으로 개발을 시작하기 전 1차 스프린트에서 해야했던 설정 중 남아 있던 설정들을 했다. 테스트 환경 설정(RTL, Storybook) 폴더구조 절대경로 설정 웹팩(webpack…]]></description><link>https://hwinkr.github.iowoowacourse-level-3-3th-sprint-retrospect</link><guid isPermaLink="false">https://hwinkr.github.iowoowacourse-level-3-3th-sprint-retrospect</guid><pubDate>Sun, 28 Jul 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;디자인을-하자&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%84-%ED%95%98%EC%9E%90&quot; aria-label=&quot;디자인을 하자 permalink&quot; class=&quot;heading-anchor before&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;15&quot; height=&quot;15&quot; viewBox=&quot;0 0 24 24&quot;&gt;&lt;path d=&quot;M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.745 8.445 2.069l-2.246 2.245c-.644-1.469-2.243-2.305-3.834-1.949-.599.134-1.168.433-1.633.898l-4.304 4.306c-1.307 1.307-1.307 3.433 0 4.74 1.307 1.307 3.433 1.307 4.74 0l1.327-1.327c1.207.479 2.501.67 3.779.575l-2.929 2.929c-2.511 2.511-6.582 2.511-9.093 0s-2.511-6.582 0-9.093l4.304-4.306zm6.836-6.836l-2.929 2.929c1.277-.096 2.572.096 3.779.574l1.326-1.326c1.307-1.307 3.433-1.307 4.74 0 1.307 1.307 1.307 3.433 0 4.74l-4.305 4.305c-1.311 1.311-3.44 1.3-4.74 0-.303-.303-.564-.68-.727-1.051l-2.246 2.245c.236.358.481.667.796.982.812.812 1.846 1.417 3.036 1.704 1.542.371 3.194.166 4.613-.617.518-.286 1.005-.648 1.444-1.087l4.304-4.305c2.512-2.511 2.512-6.582.001-9.093-2.511-2.51-6.581-2.51-9.092 0z&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;디자인을 하자&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of HW.log]]></title><description><![CDATA[의미 없는 기록은 없다고 생각하며, 학습하고 느낀 것들을 기록합니다 :)]]></description><link>https://hwinkr.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 12 Aug 2024 12:54:33 GMT</lastBuildDate><item><title><![CDATA[[TIL] aws s3, cloudfront 배포 자동화 해보기]]></title><description><![CDATA[모모 프론트엔드 배포 자동화 도전! 6주 동안 모모 서비스 개발을 진행하면서, 프론트엔드 작업이 배포가 되어야 하는 상황에 매번 aws에 로그인을 하고, s3 버킷에 새로운 리소스들을 업로드하고, cloudfront…]]></description><link>https://hwinkr.github.iotil-frontend-deploy</link><guid isPermaLink="false">https://hwinkr.github.iotil-frontend-deploy</guid><pubDate>Mon, 12 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;모모-프론트엔드-배포-자동화-도전&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%AA%A8%EB%AA%A8-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EB%B0%B0%ED%8F%AC-%EC%9E%90%EB%8F%99%ED%99%94-%EB%8F%84%EC%A0%84&quot; aria-label=&quot;모모 프론트엔드 배포 자동화 도전 permalink&quot; class=&quot;heading-anchor before&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;15&quot; height=&quot;15&quot; viewBox=&quot;0 0 24 24&quot;&gt;&lt;path d=&quot;M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.745 8.445 2.069l-2.246 2.245c-.644-1.469-2.243-2.305-3.834-1.949-.599.134-1.168.433-1.633.898l-4.304 4.306c-1.307 1.307-1.307 3.433 0 4.74 1.307 1.307 3.433 1.307 4.74 0l1.327-1.327c1.207.479 2.501.67 3.779.575l-2.929 2.929c-2.511 2.511-6.582 2.511-9.093 0s-2.511-6.582 0-9.093l4.304-4.306zm6.836-6.836l-2.929 2.929c1.277-.096 2.572.096 3.779.574l1.326-1.326c1.307-1.307 3.433-1.307 4.74 0 1.307 1.307 1.307 3.433 0 4.74l-4.305 4.305c-1.311 1.311-3.44 1.3-4.74 0-.303-.303-.564-.68-.727-1.051l-2.246 2.245c.236.358.481.667.796.982.812.812 1.846 1.417 3.036 1.704 1.542.371 3.194.166 4.613-.617.518-.286 1.005-.648 1.444-1.087l4.304-4.305c2.512-2.511 2.512-6.582.001-9.093-2.511-2.51-6.581-2.51-9.092 0z&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;모모 프론트엔드 배포 자동화 도전!&lt;/h2&gt;
+&lt;p&gt;6주 동안 모모 서비스 개발을 진행하면서, 프론트엔드 작업이 배포가 되어야 하는 상황에 매번 aws에 로그인을 하고, s3 버킷에 새로운 리소스들을 업로드하고, cloudfront의 캐싱을 무효화 하는 작업을 수동으로 했었다. 더이상 이럴 수 없다는 생각이 들어 페드로와 함께 프론트엔드 배포 자동화를 진행했다. 아래는 배포를 자동화하기 위한 yml 파일을 설정하면서 배운 내용들이다!&lt;/p&gt;
+&lt;h3 id=&quot;프론트엔드-배포-yml-파일에서-사용되는-키워드&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EB%B0%B0%ED%8F%AC-yml-%ED%8C%8C%EC%9D%BC%EC%97%90%EC%84%9C-%EC%82%AC%EC%9A%A9%EB%90%98%EB%8A%94-%ED%82%A4%EC%9B%8C%EB%93%9C&quot; aria-label=&quot;프론트엔드 배포 yml 파일에서 사용되는 키워드 permalink&quot; class=&quot;heading-anchor before&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;15&quot; height=&quot;15&quot; viewBox=&quot;0 0 24 24&quot;&gt;&lt;path d=&quot;M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.745 8.445 2.069l-2.246 2.245c-.644-1.469-2.243-2.305-3.834-1.949-.599.134-1.168.433-1.633.898l-4.304 4.306c-1.307 1.307-1.307 3.433 0 4.74 1.307 1.307 3.433 1.307 4.74 0l1.327-1.327c1.207.479 2.501.67 3.779.575l-2.929 2.929c-2.511 2.511-6.582 2.511-9.093 0s-2.511-6.582 0-9.093l4.304-4.306zm6.836-6.836l-2.929 2.929c1.277-.096 2.572.096 3.779.574l1.326-1.326c1.307-1.307 3.433-1.307 4.74 0 1.307 1.307 1.307 3.433 0 4.74l-4.305 4.305c-1.311 1.311-3.44 1.3-4.74 0-.303-.303-.564-.68-.727-1.051l-2.246 2.245c.236.358.481.667.796.982.812.812 1.846 1.417 3.036 1.704 1.542.371 3.194.166 4.613-.617.518-.286 1.005-.648 1.444-1.087l4.304-4.305c2.512-2.511 2.512-6.582.001-9.093-2.511-2.51-6.581-2.51-9.092 0z&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;프론트엔드 배포 yml 파일에서 사용되는 키워드&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;github actions&lt;/li&gt;
+&lt;li&gt;self-hosted&lt;/li&gt;
+&lt;li&gt;aws s3, cloudfront&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;on&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#on&quot; aria-label=&quot;on permalink&quot; class=&quot;heading-anchor before&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;15&quot; height=&quot;15&quot; viewBox=&quot;0 0 24 24&quot;&gt;&lt;path d=&quot;M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.745 8.445 2.069l-2.246 2.245c-.644-1.469-2.243-2.305-3.834-1.949-.599.134-1.168.433-1.633.898l-4.304 4.306c-1.307 1.307-1.307 3.433 0 4.74 1.307 1.307 3.433 1.307 4.74 0l1.327-1.327c1.207.479 2.501.67 3.779.575l-2.929 2.929c-2.511 2.511-6.582 2.511-9.093 0s-2.511-6.582 0-9.093l4.304-4.306zm6.836-6.836l-2.929 2.929c1.277-.096 2.572.096 3.779.574l1.326-1.326c1.307-1.307 3.433-1.307 4.74 0 1.307 1.307 1.307 3.433 0 4.74l-4.305 4.305c-1.311 1.311-3.44 1.3-4.74 0-.303-.303-.564-.68-.727-1.051l-2.246 2.245c.236.358.481.667.796.982.812.812 1.846 1.417 3.036 1.704 1.542.371 3.194.166 4.613-.617.518-.286 1.005-.648 1.444-1.087l4.304-4.305c2.512-2.511 2.512-6.582.001-9.093-2.511-2.51-6.581-2.51-9.092 0z&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;on&lt;/h3&gt;
+&lt;p&gt;develop 브랜치에서 시작해서&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;새로운 기능(feature)를 구현하고,&lt;/li&gt;
+&lt;li&gt;develop 브랜치로 PR(Pull Request)를 생성하고,&lt;/li&gt;
+&lt;li&gt;코드 리뷰를 주고 받다가 develop 브랜치로 머지가 될 때 Frontend CD workflow를 실행한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;깃허브 이벤트에는 merge가 존재하지 않으므로, develop 브랜치에 push가 되었을 때 워크 플로우를 실행한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;name: Frontend CD
+
+on:
+  push:
+    branches: &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;develop&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+
+permissions:
+  checks: &lt;span class=&quot;token function&quot;&gt;write&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;jobs&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#jobs&quot; aria-label=&quot;jobs permalink&quot; class=&quot;heading-anchor before&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;15&quot; height=&quot;15&quot; viewBox=&quot;0 0 24 24&quot;&gt;&lt;path d=&quot;M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.745 8.445 2.069l-2.246 2.245c-.644-1.469-2.243-2.305-3.834-1.949-.599.134-1.168.433-1.633.898l-4.304 4.306c-1.307 1.307-1.307 3.433 0 4.74 1.307 1.307 3.433 1.307 4.74 0l1.327-1.327c1.207.479 2.501.67 3.779.575l-2.929 2.929c-2.511 2.511-6.582 2.511-9.093 0s-2.511-6.582 0-9.093l4.304-4.306zm6.836-6.836l-2.929 2.929c1.277-.096 2.572.096 3.779.574l1.326-1.326c1.307-1.307 3.433-1.307 4.74 0 1.307 1.307 1.307 3.433 0 4.74l-4.305 4.305c-1.311 1.311-3.44 1.3-4.74 0-.303-.303-.564-.68-.727-1.051l-2.246 2.245c.236.358.481.667.796.982.812.812 1.846 1.417 3.036 1.704 1.542.371 3.194.166 4.613-.617.518-.286 1.005-.648 1.444-1.087l4.304-4.305c2.512-2.511 2.512-6.582.001-9.093-2.511-2.51-6.581-2.51-9.092 0z&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;jobs&lt;/h2&gt;
+&lt;h3 id=&quot;1-detect-changes&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-detect-changes&quot; aria-label=&quot;1 detect changes permalink&quot; class=&quot;heading-anchor before&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;15&quot; height=&quot;15&quot; viewBox=&quot;0 0 24 24&quot;&gt;&lt;path d=&quot;M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.745 8.445 2.069l-2.246 2.245c-.644-1.469-2.243-2.305-3.834-1.949-.599.134-1.168.433-1.633.898l-4.304 4.306c-1.307 1.307-1.307 3.433 0 4.74 1.307 1.307 3.433 1.307 4.74 0l1.327-1.327c1.207.479 2.501.67 3.779.575l-2.929 2.929c-2.511 2.511-6.582 2.511-9.093 0s-2.511-6.582 0-9.093l4.304-4.306zm6.836-6.836l-2.929 2.929c1.277-.096 2.572.096 3.779.574l1.326-1.326c1.307-1.307 3.433-1.307 4.74 0 1.307 1.307 1.307 3.433 0 4.74l-4.305 4.305c-1.311 1.311-3.44 1.3-4.74 0-.303-.303-.564-.68-.727-1.051l-2.246 2.245c.236.358.481.667.796.982.812.812 1.846 1.417 3.036 1.704 1.542.371 3.194.166 4.613-.617.518-.286 1.005-.648 1.444-1.087l4.304-4.305c2.512-2.511 2.512-6.582.001-9.093-2.511-2.51-6.581-2.51-9.092 0z&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;1) detect-changes&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;detect-changes:
+  runs-on: ubuntu-latest
+  permissions:
+    pull-requests: &lt;span class=&quot;token builtin class-name&quot;&gt;read&lt;/span&gt;
+  outputs:
+    backend: &lt;span class=&quot;token variable&quot;&gt;${{ steps.filter.outputs.backend }&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    frontend: &lt;span class=&quot;token variable&quot;&gt;${{ steps.filter.outputs.frontend }&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  steps:
+    - uses: actions/checkout@v4 &lt;span class=&quot;token comment&quot;&gt;# Push 이벤트이기 때문에 checkout 해야 함&lt;/span&gt;
+      with:
+        ref: develop
+    - uses: dorny/paths-filter@v3
+      id: filter
+      with:
+        base: &lt;span class=&quot;token string&quot;&gt;&quot;develop&quot;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# 해당 브랜치의 last commit과 변경점 비교&lt;/span&gt;
+        filters: &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;
+          backend:
+            - &lt;span class=&quot;token string&quot;&gt;&apos;backend/**&apos;&lt;/span&gt;
+          frontend:
+            - &lt;span class=&quot;token string&quot;&gt;&apos;frontend/**&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;백엔드의 PR이 머지되어 develop 브랜치에 push 이벤트가 발생할 경우에는 프론트엔드 CD 워크플로우가 실행될 필요가 없기 때문에, &lt;code class=&quot;language-text&quot;&gt;detect-changes&lt;/code&gt; job을 활용한다. &lt;code class=&quot;language-text&quot;&gt;detect-change&lt;/code&gt;는 &lt;code class=&quot;language-text&quot;&gt;develop&lt;/code&gt; 브랜치의 last commit과 PR에서의 backend, frontend 폴더 내부의 commit들과 비교해서 비교 결과를 outputs의 frontend, backend에 각각 담는 작업을 수행하는 job이다.&lt;/p&gt;
+&lt;h3 id=&quot;2-fe-build&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-fe-build&quot; aria-label=&quot;2 fe build permalink&quot; class=&quot;heading-anchor before&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;15&quot; height=&quot;15&quot; viewBox=&quot;0 0 24 24&quot;&gt;&lt;path d=&quot;M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.745 8.445 2.069l-2.246 2.245c-.644-1.469-2.243-2.305-3.834-1.949-.599.134-1.168.433-1.633.898l-4.304 4.306c-1.307 1.307-1.307 3.433 0 4.74 1.307 1.307 3.433 1.307 4.74 0l1.327-1.327c1.207.479 2.501.67 3.779.575l-2.929 2.929c-2.511 2.511-6.582 2.511-9.093 0s-2.511-6.582 0-9.093l4.304-4.306zm6.836-6.836l-2.929 2.929c1.277-.096 2.572.096 3.779.574l1.326-1.326c1.307-1.307 3.433-1.307 4.74 0 1.307 1.307 1.307 3.433 0 4.74l-4.305 4.305c-1.311 1.311-3.44 1.3-4.74 0-.303-.303-.564-.68-.727-1.051l-2.246 2.245c.236.358.481.667.796.982.812.812 1.846 1.417 3.036 1.704 1.542.371 3.194.166 4.613-.617.518-.286 1.005-.648 1.444-1.087l4.304-4.305c2.512-2.511 2.512-6.582.001-9.093-2.511-2.51-6.581-2.51-9.092 0z&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;2) fe-build&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;fe-build:
+  needs: detect-changes &lt;span class=&quot;token comment&quot;&gt;# jobs들은 병렬로 실행됨, needs 키워드를 사용해서 특정 job이 완료(성공)면 실행하도록 설정&lt;/span&gt;
+  if: &lt;span class=&quot;token variable&quot;&gt;${{ needs.detect-changes.outputs.frontend == &apos;true&apos; }&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  runs-on: ubuntu-latest
+  defaults:
+    run:
+      shell: &lt;span class=&quot;token function&quot;&gt;bash&lt;/span&gt;
+      working-directory: ./frontend
+
+  steps:
+  - name: 모모 레파지토리의 코드를 가져와요 &lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    uses: actions/checkout@v4
+
+  - name: 노드 버젼을 설정해요 &lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    uses: actions/setup-node@v4
+    with:
+      node-version: &lt;span class=&quot;token string&quot;&gt;&quot;lts/*&quot;&lt;/span&gt;
+
+  - name: 이전 의존성을 저장해둔게 있나~? 확인해요 &lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    id: cache
+    uses: actions/cache@v4
+    with:
+      path: &lt;span class=&quot;token string&quot;&gt;&quot;frontend/node_modules&quot;&lt;/span&gt;
+      key: &lt;span class=&quot;token variable&quot;&gt;${{ runner.os }&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;-node-&lt;span class=&quot;token variable&quot;&gt;${{ hashFiles(&apos;**&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;package-lock.json&apos;) }&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+      restore-keys: &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;
+        &lt;span class=&quot;token variable&quot;&gt;${{ runner.os }&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;-node-
+        &lt;span class=&quot;token variable&quot;&gt;${{ runner.os }&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  - name: package-lock.json을 활용해서 의존성을 깨끗하게 설치해요 &lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    if: steps.cache.outputs.cache-hit &lt;span class=&quot;token operator&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;true&apos;&lt;/span&gt;
+    run: &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ci
+
+  - name: .env 파일을 생성해요 &lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    run: &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;
+      &lt;span class=&quot;token builtin class-name&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;${{ secrets.MOMO_FE_ENV }&lt;/span&gt;}&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&gt;&gt;&lt;/span&gt; .env
+
+  - name: 프론트엔드 리소스를 빌드해요 &lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    run: &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; run build
+
+  - name: 프론트엔드 리소스 결과물을 깃허브 레파지토리 artifacts로 업로드해요
+    uses: actions/upload-artifact@v4
+    with:
+      name: momoResources
+      path: frontend/dist&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;1) needs&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;깃허브 워크플로우에서 각 job들은 병렬로(동시에) 실행&lt;/strong&gt;되기 때문에, 만약 A job이 B job의 결과에 영향을 받는다면 A job에서 &lt;code class=&quot;language-text&quot;&gt;needs&lt;/code&gt;를 활용해서 B job이 끝나기를 기다려야 한다는 것을 명시한다. fe-build는 detect-change의 결과에 따라서 실행을 할지 말지 결정되기 때문에 needs에 detect-change를 추가한다. detect-change job의 결과물에서 frontend에 변경사항이 있으면, 프론트엔드 리소스들을 빌드하기 위한 job을 수행한다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2) working-directory: ./frontend&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;workding-directory가 ./frontend라는 것은 워크플로우를 실행하는 깃허브 서버에서 &lt;code class=&quot;language-text&quot;&gt;cd frontend&lt;/code&gt; 명령어를 입력하는 것과 같다. npm ci, npm run build와 같은 명령어를 실행하려면 frontend 경로 내부에서 실행해야 하기 때문에 ./frontend경로로 이동해서 작업들을 수행할 것을 명시한다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3) actions/checkout@v4&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;checkout은 깃허브 서버에 모모 레파지토리 코드를 가져오는 역할을 한다. 즉, 깃허브 서버에 git clone 명령어를 입력하는 것과 같다. checkout을 하면 워크플로우를 실행하는 깃허브 서버의 한 디렉터리에 모모 레파지토리 코드들이 다운로드된다. 100% 확실하지는 않은 경로지만 대략적으로 아래와 같이 디렉터리들이 만들어진다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;/home/runner/work/2024-momo/frontend-cd/frontend&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;/home/runner/work/2024-momo/frontend-cd/backend&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;4) upload-artifact&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;working-directory가 ./frontend이기 때문에 모모 레파지토리에 있는 frontend 디렉터리로 이동해서, 의존성(package.json)들을 설치하고, env 파일을 설정하고 npm run build를 실행한다. 빌드까지 완료되면 위에서 언급한 대략적인 디렉터리에 즉, &lt;code class=&quot;language-text&quot;&gt;/home/runner/work/2024-momo/frontend-cd/frontend/dist&lt;/code&gt; 해당 디렉터리에 빌드 결과물들이 생긴다. 이제 &lt;code class=&quot;language-text&quot;&gt;artifacts&lt;/code&gt;에 &lt;code class=&quot;language-text&quot;&gt;frontend/dist&lt;/code&gt; 경로에 있는 결과물을 임시저장한다. 깃허브 &lt;code class=&quot;language-text&quot;&gt;artifacts&lt;/code&gt;는 워크플로우 실행 중에 생성된 파일이나 결과물을 임시로 저장하고, 다른 워크플로우 단계에서 다운로드해서 사용할 수 있는 임시 저장소 역할을 한다.&lt;/p&gt;
+&lt;h3 id=&quot;3-deploy&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-deploy&quot; aria-label=&quot;3 deploy permalink&quot; class=&quot;heading-anchor before&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;15&quot; height=&quot;15&quot; viewBox=&quot;0 0 24 24&quot;&gt;&lt;path d=&quot;M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.745 8.445 2.069l-2.246 2.245c-.644-1.469-2.243-2.305-3.834-1.949-.599.134-1.168.433-1.633.898l-4.304 4.306c-1.307 1.307-1.307 3.433 0 4.74 1.307 1.307 3.433 1.307 4.74 0l1.327-1.327c1.207.479 2.501.67 3.779.575l-2.929 2.929c-2.511 2.511-6.582 2.511-9.093 0s-2.511-6.582 0-9.093l4.304-4.306zm6.836-6.836l-2.929 2.929c1.277-.096 2.572.096 3.779.574l1.326-1.326c1.307-1.307 3.433-1.307 4.74 0 1.307 1.307 1.307 3.433 0 4.74l-4.305 4.305c-1.311 1.311-3.44 1.3-4.74 0-.303-.303-.564-.68-.727-1.051l-2.246 2.245c.236.358.481.667.796.982.812.812 1.846 1.417 3.036 1.704 1.542.371 3.194.166 4.613-.617.518-.286 1.005-.648 1.444-1.087l4.304-4.305c2.512-2.511 2.512-6.582.001-9.093-2.511-2.51-6.581-2.51-9.092 0z&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;3) deploy&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;deploy:
+  needs: fe-build
+  runs-on: self-hosted
+  env:
+    CLOUD_FRONT_DISTRIBUTION_ID: &lt;span class=&quot;token variable&quot;&gt;${{ secrets.CLOUDFRONT_DISTRIBUTION_ID}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  steps:
+    - name: 모모 깃허브 레파지토리 artifacts로 부터 빌드 결과물을 다운받아요 &lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      uses: actions/download-artifact@v4
+      with:
+        name: momoResources
+        path: ./frontend/dist
+    - name: aws에 배포하고 cloudfront 캐싱을 무효화해요
+      working-directory: ./frontend/dist/
+      run: &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;
+        aws s3 &lt;span class=&quot;token function&quot;&gt;sync&lt;/span&gt; ./ s3://techcourse-project-2024/momo &lt;span class=&quot;token parameter variable&quot;&gt;--delete&lt;/span&gt;
+        aws cloudfront create-invalidation --distribution-id &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;$CLOUD_FRONT_DISTRIBUTION_ID&lt;/span&gt;&quot;&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;--paths&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;/*&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;1) self-hosted&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;깃허브 서버(ubunt-lastes)를 사용하는 것이 아니라, self-hosted를 사용하는 이유는 깃허브 서버에서 우아한테크코스 aws에 접근할 수 있는 방법이 없기 때문이다. IAM 키를 발급받을 수 없는 환경이기 때문에, 우아한테크코스 aws에서 생성한 EC2 인스턴스에서 deploy job을 실행해야 한다.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;aws s3 sync&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;aws cloudfront …&lt;/code&gt; 와 같은 aws 명령어를 실행하기 위해서는 EC2 인스턴스에 &lt;code class=&quot;language-text&quot;&gt;aws cli&lt;/code&gt;가 설치되어 있어야 한다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2) download-artifact&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;깃허브 artifacts에 저장한 momoResource를 EC2 인스턴스의 ./frontend/dist 경로에 다운로드 받는다. 깃허브 artifacts는 upload 할 때, 사용했던 name기준으로 찾는다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;*Downloading files&lt;/strong&gt;: You can only download artifacts that were uploaded during the same workflow run. When you download a file, you can reference it by name.
+파일 다운로드: 동일한 워크플로 실행 중에 업로드된 아티팩트만 다운로드할 수 있습니다. 파일을 다운로드할 때 이름으로 파일을 참조할 수 있습니다.*&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/storing-workflow-data-as-artifacts#about-workflow-artifacts&quot;&gt;참고&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3) aws s3 sync&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;aws s3 sync는 자동으로 변경을 감지하여 변경 사항이 있는 파일들만 s3 버킷과 동기화 한다. 즉, 현재 s3 버킷에 저장되어 있는 리소스들과, 새롭게 빌드된 리소스들을 비교를 해서 변경 사항이 있는 파일들만 동기화 하는 작업을 수행한다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4) aws cloudfront create-invalidation&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;cloudfront의 역할 중에는 s3 버킷에 저장된 리소스들을 캐싱하는 역할도 있다. 만약 s3 버킷에는 새로운 리소스들이 업로드 되어 있지만, cloudfront는 여전히 예전 리소스들을 캐싱하고 있다면 새로운 버젼이 릴리즈되었음에도 불구하고 사용자에게 이전 버젼의 서비스를 제공할 수도 있는 문제가 발생한다. 이 문제가 발생하지 않도록 하기 위해서 create-invalidation 명령어를 통해서 cloudfront의 캐싱을 무효화한다. 리액트 쿼리의 &lt;code class=&quot;language-text&quot;&gt;queryClient.invalidateQueries&lt;/code&gt; 와 비슷하다.&lt;/p&gt;
+&lt;p&gt;아래는 전체 yml 파일 구성이다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;name: 모모 프론트엔드 배포 자동화 워크플로우
+
+on:
+  push:
+    branches: &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;develop&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+
+permissions:
+  checks: &lt;span class=&quot;token function&quot;&gt;write&lt;/span&gt;
+
+jobs:
+  detect-changes:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: &lt;span class=&quot;token builtin class-name&quot;&gt;read&lt;/span&gt;
+    outputs:
+      backend: &lt;span class=&quot;token variable&quot;&gt;${{ steps.filter.outputs.backend }&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+      frontend: &lt;span class=&quot;token variable&quot;&gt;${{ steps.filter.outputs.frontend }&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    steps:
+      - uses: actions/checkout@v4 &lt;span class=&quot;token comment&quot;&gt;# Push 이벤트이기 때문에 checkout 해야 함&lt;/span&gt;
+        with:
+          ref: develop
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          base: &lt;span class=&quot;token string&quot;&gt;&quot;develop&quot;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# 해당 브랜치의 last commit과 변경점 비교&lt;/span&gt;
+          filters: &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;
+            backend:
+              - &lt;span class=&quot;token string&quot;&gt;&apos;backend/**&apos;&lt;/span&gt;
+            frontend:
+              - &lt;span class=&quot;token string&quot;&gt;&apos;frontend/**&apos;&lt;/span&gt;
+
+  fe-build:
+    needs: detect-changes &lt;span class=&quot;token comment&quot;&gt;# jobs들은 병렬로 실행됨, needs 키워드를 사용해서 특정 job이 완료(성공)면 실행하도록 설정&lt;/span&gt;
+    if: &lt;span class=&quot;token variable&quot;&gt;${{ needs.detect-changes.outputs.frontend == &apos;true&apos; }&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: &lt;span class=&quot;token function&quot;&gt;bash&lt;/span&gt;
+        working-directory: ./frontend
+
+    steps:
+      - name: 모모 레파지토리의 코드를 가져와요 &lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        uses: actions/checkout@v4
+
+      - name: 노드 버젼을 설정해요 &lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        uses: actions/setup-node@v4
+        with:
+          node-version: &lt;span class=&quot;token string&quot;&gt;&quot;lts/*&quot;&lt;/span&gt;
+
+      - name: 이전 의존성을 저장해둔게 있나~? 확인해요 &lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: &lt;span class=&quot;token string&quot;&gt;&quot;frontend/node_modules&quot;&lt;/span&gt;
+          key: &lt;span class=&quot;token variable&quot;&gt;${{ runner.os }&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;-node-&lt;span class=&quot;token variable&quot;&gt;${{ hashFiles(&apos;**&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;package-lock.json&apos;) }&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+          restore-keys: &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;
+            &lt;span class=&quot;token variable&quot;&gt;${{ runner.os }&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;-node-
+            &lt;span class=&quot;token variable&quot;&gt;${{ runner.os }&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+      - name: package-lock.json을 활용해서 의존성을 깨끗하게 설치해요 &lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        if: steps.cache.outputs.cache-hit &lt;span class=&quot;token operator&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;true&apos;&lt;/span&gt;
+        run: &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ci
+
+      - name: .env 파일을 생성해요 &lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        run: &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;
+          &lt;span class=&quot;token builtin class-name&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;${{ secrets.MOMO_FE_ENV }&lt;/span&gt;}&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&gt;&gt;&lt;/span&gt; .env
+
+      - name: 프론트엔드 리소스를 빌드해요 &lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        run: &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; run build
+
+      - name: 프론트엔드 리소스 결과물을 깃허브 레파지토리 artifacts로 업로드해요
+        uses: actions/upload-artifact@v4
+        with:
+          name: momoResources
+          path: frontend/dist
+
+  deploy:
+    needs: fe-build
+    runs-on: self-hosted
+    env:
+      CLOUD_FRONT_DISTRIBUTION_ID: &lt;span class=&quot;token variable&quot;&gt;${{ secrets.CLOUDFRONT_DISTRIBUTION_ID}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    steps:
+      - name: 모모 깃허브 레파지토리 artifacts로 부터 빌드 결과물을 다운받아요 &lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        uses: actions/download-artifact@v4
+        with:
+          name: momoResources
+          path: ./frontend/dist
+      - name: aws에 배포하고 cloudfront 캐싱을 무효화해요
+        working-directory: ./frontend/dist/
+        run: &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;
+          aws s3 &lt;span class=&quot;token function&quot;&gt;sync&lt;/span&gt; ./ s3://techcourse-project-2024/momo &lt;span class=&quot;token parameter variable&quot;&gt;--delete&lt;/span&gt;
+          aws cloudfront create-invalidation --distribution-id &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;$CLOUD_FRONT_DISTRIBUTION_ID&lt;/span&gt;&quot;&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;--paths&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;/*&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;느낀점&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%8A%90%EB%82%80%EC%A0%90&quot; aria-label=&quot;느낀점 permalink&quot; class=&quot;heading-anchor before&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;15&quot; height=&quot;15&quot; viewBox=&quot;0 0 24 24&quot;&gt;&lt;path d=&quot;M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.745 8.445 2.069l-2.246 2.245c-.644-1.469-2.243-2.305-3.834-1.949-.599.134-1.168.433-1.633.898l-4.304 4.306c-1.307 1.307-1.307 3.433 0 4.74 1.307 1.307 3.433 1.307 4.74 0l1.327-1.327c1.207.479 2.501.67 3.779.575l-2.929 2.929c-2.511 2.511-6.582 2.511-9.093 0s-2.511-6.582 0-9.093l4.304-4.306zm6.836-6.836l-2.929 2.929c1.277-.096 2.572.096 3.779.574l1.326-1.326c1.307-1.307 3.433-1.307 4.74 0 1.307 1.307 1.307 3.433 0 4.74l-4.305 4.305c-1.311 1.311-3.44 1.3-4.74 0-.303-.303-.564-.68-.727-1.051l-2.246 2.245c.236.358.481.667.796.982.812.812 1.846 1.417 3.036 1.704 1.542.371 3.194.166 4.613-.617.518-.286 1.005-.648 1.444-1.087l4.304-4.305c2.512-2.511 2.512-6.582.001-9.093-2.511-2.51-6.581-2.51-9.092 0z&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;느낀점&lt;/h2&gt;
+&lt;p&gt;이전에 &lt;code class=&quot;language-text&quot;&gt;aws amplify&lt;/code&gt;를 사용해서 배포를 했었을 때는, aws에서 알려주는대로 버튼만 클릭하면 알아서 모든 것을 해줬다. 심지어 yml 파일을 만들 필요도 없었다. 하지만 이번에 배포 자동화를 위한 yml 파일을 직접 만들면서 초반에는 이해하기 힘들었지만, 각 job들을 수행하기 위한 명령어들을 평소에 내가 자주 사용하는 명령어로 비유해서 이해를 시도하니 쉽게 이해할 수 있었다. (cd frontend, git clone과 같은…)&lt;/p&gt;
+&lt;p&gt;이제 merge 버튼만 클릭하면 프론트엔드 배포가 알아서 된다니… 너무 편하게 개발할 수 있을 것 같다!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PR 링크 : &lt;a href=&quot;https://github.com/woowacourse-teams/2024-momo/pull/212&quot;&gt;https://github.com/woowacourse-teams/2024-momo/pull/212&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[우아한테크코스 레벨 3 2차 스프린트 회고]]></title><description><![CDATA[디자인을 하자 1차 스프린트와 해커톤이 끝난 후, 본격적으로 개발을 시작하기 전 1차 스프린트에서 해야했던 설정 중 남아 있던 설정들을 했다. 테스트 환경 설정(RTL, Storybook) 폴더구조 절대경로 설정 웹팩(webpack…]]></description><link>https://hwinkr.github.iowoowacourse-level-3-3th-sprint-retrospect</link><guid isPermaLink="false">https://hwinkr.github.iowoowacourse-level-3-3th-sprint-retrospect</guid><pubDate>Sun, 28 Jul 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;디자인을-하자&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%84-%ED%95%98%EC%9E%90&quot; aria-label=&quot;디자인을 하자 permalink&quot; class=&quot;heading-anchor before&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;15&quot; height=&quot;15&quot; viewBox=&quot;0 0 24 24&quot;&gt;&lt;path d=&quot;M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.745 8.445 2.069l-2.246 2.245c-.644-1.469-2.243-2.305-3.834-1.949-.599.134-1.168.433-1.633.898l-4.304 4.306c-1.307 1.307-1.307 3.433 0 4.74 1.307 1.307 3.433 1.307 4.74 0l1.327-1.327c1.207.479 2.501.67 3.779.575l-2.929 2.929c-2.511 2.511-6.582 2.511-9.093 0s-2.511-6.582 0-9.093l4.304-4.306zm6.836-6.836l-2.929 2.929c1.277-.096 2.572.096 3.779.574l1.326-1.326c1.307-1.307 3.433-1.307 4.74 0 1.307 1.307 1.307 3.433 0 4.74l-4.305 4.305c-1.311 1.311-3.44 1.3-4.74 0-.303-.303-.564-.68-.727-1.051l-2.246 2.245c.236.358.481.667.796.982.812.812 1.846 1.417 3.036 1.704 1.542.371 3.194.166 4.613-.617.518-.286 1.005-.648 1.444-1.087l4.304-4.305c2.512-2.511 2.512-6.582.001-9.093-2.511-2.51-6.581-2.51-9.092 0z&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;디자인을 하자&lt;/h2&gt;
 &lt;p&gt;1차 스프린트와 해커톤이 끝난 후, 본격적으로 개발을 시작하기 전 1차 스프린트에서 해야했던 설정 중 남아 있던 설정들을 했다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;테스트 환경 설정(RTL, Storybook)&lt;/li&gt;
