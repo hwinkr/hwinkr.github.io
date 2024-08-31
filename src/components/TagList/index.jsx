@@ -58,7 +58,9 @@ const TagList = ({ tagList, count, selected }) => {
         <Link
           key={JSON.stringify({ tag, i })}
           to={
-            selected === tag.fieldValue ? "/tags" : `/tags?q=${tag.fieldValue}`
+            selected === tag.fieldValue
+              ? "/tags"
+              : `/tags?q=${encodeURIComponent(tag.fieldValue)}`
           }
         >
           <TagLink selected={tag.fieldValue === selected}>
