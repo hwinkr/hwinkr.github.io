@@ -78,7 +78,7 @@ const PostList = ({ postList }) => {
           <>
             <PostWrapper>
               <Title size="bg">
-                <Link to={slug}>{title}</Link>
+                <Link to={`/${slug}`}>{title}</Link>
               </Title>
               <Date>{date}</Date>
               <Excerpt>{excerpt}</Excerpt>
