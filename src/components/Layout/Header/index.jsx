@@ -39,7 +39,7 @@ const Inner = styled.div`
 const BlogTitle = styled.span`
   letter-spacing: -1px;
   font-family: "SF Mono", "Inter", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 24px;
   color: ${props => props.theme.colors.text};
 
