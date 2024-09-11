@@ -12,7 +12,7 @@ const GRAY0 = "#f8f9fa"
 export const light = {
   name: "light",
   colors: {
-    bodyBackground: "rgb(248, 251, 241)",
+    bodyBackground: "#F9FBF1",
     text: GRAY9,
     secondaryText: GRAY7,
     tertiaryText: GRAY6,
@@ -23,7 +23,7 @@ export const light = {
     background: GRAY1,
     icon: GRAY6,
     divider: GRAY2,
-    headerBackground: "#f8fbf1",
+    headerBackground: "#f8fef2ff",
     headerShadow: "rgba(0, 0, 0, 0.08)",
     inlineCodeBackground: GRAY2,
     inlineCodeBackgroundDarker: GRAY4,
